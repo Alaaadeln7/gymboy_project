@@ -1,0 +1,60 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+
+article.classes-item {
+  width: clamp(200px, 300px, 350px);
+  background: $scoundry-color;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  .image {
+    width: 95%;
+    height: 300px;
+    border-radius: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+    a {
+      color: $white-color;
+      background: $primary-color;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 20px;
+      margin: 0 5px;
+      display: flex;
+      transition: $transition;
+      &:hover {
+        color: $primary-color;
+        background: $light-scoundry-color;
+      }
+    }
+  }
+  a.link {
+    width: 100%;
+    background: $primary-color;
+    color: $white-color;
+    transition: $transition;
+    text-align: center;
+    &:hover {
+      background: $light-scoundry-color;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+
+.beginners-section,
+.meduim-section,
+.export-section {
+  flex-direction: column;
+  gap: 20px;
+  .classes-header {
+    padding: 0 0 0 10%;
+    font-size: 25px;
+    margin: 5% 0 2% 0;
+  }
+  .contain-classes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

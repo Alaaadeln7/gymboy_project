@@ -1,0 +1,46 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+.product {
+  width: 240px;
+  height: 370px;
+  padding: 20px;
+  background: #32363c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  .contain-price {
+    display: flex;
+    gap: 10px;
+    .old-price {
+      color: $card-bg-color;
+    }
+  }
+
+  img {
+    width: 80%;
+  }
+  button {
+    width: 100%;
+    background: $primary-color;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    &:hover {
+      background: $light-scoundry-color;
+      outline: 1px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+}

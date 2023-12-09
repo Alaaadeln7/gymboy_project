@@ -1,0 +1,99 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;800&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: $dark-color;
+  color: $white-color;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: $padding;
+  padding-right: $padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.product-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15%;
+}
+.btn {
+  transition: $transition;
+  color: $primary-color;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  &:hover {
+    background: $primary-color;
+    color: $white-color;
+  }
+  &:active {
+    transform: translateY(5px);
+  }
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+::selection {
+  background: $primary-color;
+  color: $white-color;
+}
+
+.light {
+  background: #fff;
+  color: #15141b;
+}

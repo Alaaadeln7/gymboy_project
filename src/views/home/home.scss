@@ -1,0 +1,142 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.palns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 6% 0;
+}
+.meet {
+  h1 {
+    font-size: 40px;
+    margin: 5% 0;
+    padding-left: 8%;
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+  button {
+    padding-left: 8%;
+    background: $primary-color;
+    color: $dark-color;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 15px 5em;
+    font-weight: 600;
+    font-size: 17px;
+    transition: $transition;
+    &:hover {
+      background: $light-scoundry-color;
+      outline: 1px solid $primary-color;
+      color: $primary-color;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+  }
+  .trainners-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4em;
+  }
+}
+
+.why-choose {
+  margin: 10% 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .text-list {
+    max-width: 40%;
+    @media (max-width: 768px) {
+      max-width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 35px;
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+  ul {
+    list-style: disc;
+    color: $card-bg-color;
+    @media (max-width: 768px) {
+      list-style: none !important;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    li {
+      margin: 15px 0;
+    }
+  }
+  .image {
+    max-width: 25%;
+    border: 2px solid $primary-color;
+    border-right: none;
+    padding: 10px;
+    position: relative;
+    margin: 5% 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: $primary-color;
+      width: 300px;
+      height: 400px;
+      z-index: -1;
+
+      @media (max-width: 768px) {
+        width: 250px;
+        height: 320px;
+      }
+    }
+    @media (max-width: 768px) {
+      max-width: 60%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+
+section.login {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .form-header {
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      h1 {
+        margin: 3% 0;
+      }
+      .message {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        background: $light-scoundry-color;
+        text-align: center;
+        // opacity: 0;
+        width: 80%;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: $transition;
+        visibility: hidden;
+        // visibility: visible;
+      }
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 5% 0;
+      gap: 10px;
+      justify-content: center;
+      input,
+      select,
+      option {
+        padding: 5% 0;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: $light-scoundry-color;
+        color: $white-color;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      button {
+        width: 100%;
+        background: $primary-color;
+        color: $white-color;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        &:hover {
+          background: $scoundry-color;
+          color: $primary-color;
+          outline: 1px solid $primary-color;
+        }
+      }
+      .contain-btns {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-fit {
+        width: fit-content;
+      }
+    }
+  }
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+
+@keyframes show-and-hidden {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// animation: show-and-hidden 1s linear;

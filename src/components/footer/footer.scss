@@ -1,0 +1,47 @@
+$primary-color: #ffc832;
+$scoundry-color: #22272e;
+$card-bg-color: #959799;
+$light-scoundry-color: #32363c;
+$dark-color: #15141b;
+$white-color: #fff;
+$transition: all 0.3s ease;
+$padding: 15px;
+
+footer {
+  background: $light-scoundry-color;
+  color: $white-color;
+  padding: 2% 0;
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    div {
+      max-width: 250px;
+      h1 {
+        color: $primary-color;
+      }
+      h3 {
+        font-weight: 500;
+        margin: 5% 0;
+        color: $primary-color;
+      }
+      p {
+        line-height: 1.7;
+      }
+      ul {
+        li {
+          margin: 15px 0;
+          a {
+            color: #fff;
+            transition: $transition;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
